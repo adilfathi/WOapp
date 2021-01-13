@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".HistoryActivity">
+
+    <com.google.android.material.appbar.MaterialToolbar
+        android:id="@+id/toolbar_history"
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="@color/colorPrimaryDark"
+        app:title="History"
+        app:titleTextColor="@color/ghostWhite" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/txt_exerciseFinished"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Exercise Finished !"
+            android:fontFamily="@font/poppinsbold"
+            android:layout_marginTop="8dp"
+            android:textAlignment="center"
+            android:textSize="22sp"
+            android:textColor="@color/colorPrimary"
+            android:visibility="gone"
+            tools:visibility="visible" />
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/rvHistory"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:visibility="gone"
+            tools:visibility="visible"
+            tools:listitem="@layout/item_history_row"/>
+
+        <TextView
+            android:id="@+id/txt_noDataAvailable"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="No Data Available"
+            android:textSize="22sp"
+            android:gravity="center"
+            android:layout_marginTop="280dp"
+            android:visibility="visible"
+            tools:visibility="gone"
+            android:fontFamily="@font/poppinsbold"
+            android:textColor="@color/doveBlack" />
+
+    </LinearLayout>
+</LinearLayout>

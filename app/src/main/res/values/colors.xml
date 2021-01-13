@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#005b96</color>
+    <color name="colorPrimaryDark">#03396c</color>
+    <color name="colorAccent">#b3cde0</color>
+    <color name="teal_200">#FF03DAC5</color>
+    <color name="teal_700">#FF018786</color>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+    <color name="doveBlack">#202020</color>
+    <color name="lightBlue">#63ace5</color>
+    <color name="ghostWhite">#f8f8ff</color>
+</resources>
